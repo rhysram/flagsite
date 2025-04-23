@@ -1,0 +1,175 @@
+/*MOBILE*/
+@media only screen and (max-width:800px){
+    .nav{
+        Display: flex;
+        justify-content: center;
+    }
+    a {
+        text-align:center;
+        margin:1em;
+    }
+    .section1 img{
+        height:4.2em;
+    }
+    .section2 img{
+        height:4.2em;
+    }
+    .section3 img{
+        height:4.2em;
+    }
+    .images{
+        display:flex;
+        flex-direction:row;
+        justify-content:left;
+        align-items:left;
+        padding:0.8em;
+    }
+}
+/*TABLET*/
+@media only screen and (min-width:800px){
+    .nav{
+        Display: flex;
+        justify-content: center;
+    }
+    a {
+        text-align:center;
+        margin:1em;
+    }
+    .section1 img{
+        height:8em;
+    }
+    .section2 img{
+        height:8em;
+    }
+    .section3 img{
+        height:8em;
+    }
+    .images{
+        display:flex;
+        flex-direction:row;
+        justify-content:left;
+    }
+}
+/*DESKTOP*/
+@media only screen and (min-width:1200px){
+    .nav{
+        Display: block;
+    }
+    a {
+        display:block;
+        text-align:center;
+        margin:1.3em
+    }
+    .section1 img{
+        height:11em;
+    }
+    .section2 img{
+        height:11em;
+    }
+    .section3 img{
+        height:11em;
+    }
+    .images{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        padding:2em;
+    }
+    }
+
+
+/* LIGHT & DARK MODE */ 
+@media (prefers-color-scheme: light) {
+    body {
+        background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url("images/backgroundimage.jpg");
+    }
+    h1{
+        color:blue;
+    }
+   h2, h3, h4, p {
+        color: black
+    }
+    .caption{
+        color:rgb(85, 85, 85);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("images/backgroundimage.jpg");
+    }
+    h1{
+        color:rgb(30, 102, 246);
+    }
+    h2, h3, h4, p {
+        color: white
+    }
+    .caption{
+        color:rgb(231, 231, 231);
+    }
+    a{
+        color:rgb(109, 218, 255);
+    }
+    a:visited{
+        color:rgb(197, 150, 231);
+    }
+  }
+
+
+@font-face{
+    font-family:"CustomFont";
+    src:url(Galindo-Regular.ttf);
+}
+
+@font-face{
+    font-family:"NavalFlags";
+    src:url(BabelStoneMaritime.ttf);
+}
+
+h1{
+    font-family:"CustomFont", sans-serif;
+    font-size:2.5em;
+}
+
+#dayFlags{
+    font-family:"NavalFlags";
+    font-size:4em;
+}
+
+h2, h3, p, a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.caption{
+    font-size:0.9em;
+    text-align:center;
+    text-wrap: wrap;
+}
+
+img{
+    padding:1.2em;
+}
+
+
+.section1, .section2, .section3 {
+    text-align:center;
+    align-items: center;  
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+button{
+    margin: 0;
+    transform: translateY(20%);
+    transform: translateX(20%);
+
+    @media (prefers-color-scheme: light) {
+        
+    }
+}

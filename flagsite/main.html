@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<script src="javascript.js" defer></script>
+<title>Flags Are Cool!</title>
+
+<style>
+/*MOBILE*/
+@media only screen and (max-width:800px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto;
+        Grid-template-rows: 2% 4% 5% auto auto auto auto;
+        padding:1em;
+        margin:1em;
+        gap: 1em;
+        Grid-template-areas: 
+            "nav"
+            "header"
+            "p1"
+            "info1"
+            "info2"
+            "info3"
+            "day";
+    }
+}
+/*TABLET*/
+@media only screen and (min-width:800px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto auto;
+        Grid-template-rows: 1% 5% 5% auto auto auto;
+        padding:1.8em;
+        margin:1.8em;
+        gap: 1.8em;
+        Grid-template-areas: 
+            "nav nav"
+            "header header"
+            "p1 p1"
+            "info1 info2"
+            "info3 info3"
+            "day day"
+    }
+}
+/*DESKTOP*/
+@media only screen and (min-width:1200px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto auto auto 15%;
+        Grid-template-rows: 7% 5% auto auto auto auto;
+        padding:1.8em;
+        padding-top:1%;
+        margin:1.8em;
+        gap: 1.8em;
+        Grid-template-areas: 
+            "header header header ."
+            "p1 p1 p1 nav"
+            "info1 info2 info3 ."
+            "info1 info2 info3 ."
+            "info1 info2 info3 ."
+            "day day day day";
+    }
+}
+</style>
+
+</head>
+<body>
+<div class="grid">
+    <h1 style="Grid-area:header; text-align:center;"">FLAGS ARE COOL!</h1>
+    <p style="Grid-area:p1; text-align:center"">A flag is defined as a piece of cloth or similar material that is attachable to a pole or rope and is used as the symbol or emblem of a country or institution or as a decoration during public festivities. That’s a big definition! Let’s break it down a bit:
+    </p>
+    <section class="info1" style="Grid-area:info1;">
+        <h3>Material & Placement</h3>
+        <p>While flags are almost always made of fabric, this wasn’t always the case. The oldest flag discovered was a bronze flag dating back to 2400 BC in Iran, and cloth flags weren’t around until around 1100 BC. Additionally, some aspects of flags used to be painted on fabric rather than sewn on, like complex coats of arms.</p> 
+        <p>Flags are typically hung from flagpoles, with the shortest edge against the pole. There are many different shapes for flags, but the most common is a rectangle or square. 
+        </p>
+        <img src="images/img1.jpg" srcset="images/img1%20copy.jpg 1x, images/img1.jpg 2x" alt="Image of a bronze flag with a faded design" style="width:20em;margin:auto;display:block;">
+        <p class="caption">Flag of Iran, c. 2400 BC</p>
+    </section>
+    <section class="info2" style="Grid-area:info2;">
+        <h3>Symbols & Emblems</h3>
+        <p>Flags can be used to symbolize nations, countries, regions, counties and even towns. They can represent groups of people, identities, religions, sports teams, or important people / royalty. A flag's shape, design, and colors are carefully picked to symbolize what the flag stands for. The most common symbols on national flags are stars, crests, coats of arms, crosses, the sun and the moon. 
+        </p>
+        <img src="images/img2.jpg" srcset="images/img2%20copy.jpg 1x, images/img2.jpg 2x" alt="Image of popular national flag symbols including stars, suns, crosses and crescents " style="width:20em;margin:auto;display:block;">
+        <p class="caption">Some national flag symbols</p>
+    </section>
+    <section class="info3" style="Grid-area:info3;">
+        <h3>Uses</h3>
+        <p>While for most people, their first thought of flags will be those that represent countries / nations, flags can be used for practical purposes, instructions or decoration. For example, maritime signal flags stand for letters and numbers, red and yellow flags are used in sports to denote penalties, beaches use colored flags to determine open or guarded swimming areas, and railways use flags to direct trains. Flag garlands can be used as decoration at parties or other events. 
+        </p>
+        <img src="images/img3.jpg" srcset="images/img3%20copy.jpg 1x, images/img3.jpg 2x" alt="2 orange and red flags on a beach" style="width:20em;margin:auto;display:block;">
+        <p class="caption">A flag at a beach stating that the area is open and guarded</p>
+    </section>
+    <section class="day" style="Grid-area:day;">
+        <hr>
+        <p style="text-align: center; margin:2%">Today is...</p>
+        <p style="text-align: center; margin:2%" id="dayFlags"></p>
+        <p style="text-align: center; margin:2%" id="dayText"></p>
+
+    </section>
+    <nav class="nav" style="Grid-area:nav;">
+        <a href="main.html">Home</a>
+        <a href="types.html">Types of flags</a>
+        <a href="goodbad.html">Good flag, bad flag</a>
+        <a href="facts.html">Flag facts</a>
+        <button id="button">Random Background</button>
+    </nav>
+
+</div>
+
+</body>
+</html>
