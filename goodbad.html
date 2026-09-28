@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale-1">
+<link rel="stylesheet" href="styles.css">
+<title>Good Flag, Bad Flag</title>
+
+<style>
+    /*MOBILE*/
+@media only screen and (max-width:800px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto;
+        Grid-template-rows: 2% 3% 6% auto;
+        margin:1.8em;
+        gap: 2em;
+        Grid-template-areas: 
+            "nav"
+            "header"
+            "p1"
+            "section"
+    }
+}
+/*TABLET*/
+@media only screen and (min-width:800px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto;
+        Grid-template-rows: 2% 4% 5% auto;
+        margin:1.8em;
+        gap: 2em;
+        Grid-template-areas: 
+            "nav"
+            "header"
+            "p1"
+            "section"
+    }
+}
+/*DESKTOP*/
+@media only screen and (min-width:1200px){
+    .grid{
+        Display: grid;
+        Grid-template-columns: auto 15%;
+        Grid-template-rows: 5% 5% auto;
+        padding:1em;
+        margin:1em;
+        gap: 1em;
+        Grid-template-areas: 
+            "header ."
+            "p1 nav"
+            "section nav"
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <div class="grid">
+        <h1 style="Grid-area:header; text-align:center;">FLAG DESIGN</h1>
+        <div class="p" style="Grid-area:p1; text-align:center">
+        <p>A person who studies flags is called a vexillologist, and a person who designs flags is a vexillographer. Vexillologists and vexillographers have common standards and “rules” as to what makes a flag design appealing or not. </p>
+        <p>Here are the North American Vexillological Association’s five principles to a good flag design:
+        </p>
+        </div>
+        <section class="section" style="Grid-area:section;">
+            <div class="images">
+                <div class="section1" style="margin:0.5em;">
+                <h3>Keep It Simple</h3>
+                <p>The flag should be so simple that a child can draw it from memory.</p>
+                </div>
+                <div class="section2" style="margin:0.5em;">
+                    <h3>Use Meaningful Symbolism</h3>
+                    <p>The flag's images, colors, or patterns should relate to what it symbolizes.</p>
+                    </div>
+            </div>
+            <div class="images">
+                <div class="section1" style="margin:0.5em;">
+                <h3>Use 2 or 3 Basic Colors</h3>
+                <p>Limit the number of colors on the flag to three which contrast well and come from the standard color set.</p>
+                </div>
+                <div class="section2" style="margin:0.5em;">
+                    <h3>No Lettering or Seals</h3>
+                    <p>Never use writing of any kind or an organization's seal.</p>
+                    </div>
+                 <div class="section3" style="margin:0.5em;">
+                    <h3>Be Distinctive or Be Related</h3>
+                    <p>Avoid duplicating other flags, but use similarities to show connections.</p>
+                    </div>
+            </div>
+
+            <h3>According to these rules, these are some "good" flags:</h3>
+            <div class="images">
+                <div class="section1">
+                <img src="images/drflag.jpg" srcset="images/drflag%20copy.jpg 1x,images/drflag.jpg 2x" alt="Blue and red flag of the dominican republic">
+                <p class="caption">Dominican Republic</p>
+                </div>
+                <div class="section2">
+                    <img src="images/bangladesh.jpg" srcset="images/bangladesh%20copy.jpg 1x, images/bangladesh.jpg 2x" alt="green and red flag of bangladesh">
+                    <p class="caption">Bangladesh</p>
+                </div>
+                <div class="section3">
+                    <img src="images/alaska.jpg" srcset="images/alaska%20copy.jpg 1x, images/alaska.jpg 2x" alt="Blue flag of alaska with big dipper on it">
+                    <p class="caption">Alaska</p>
+                </div>
+            </div>
+
+            <h3>And these are some "bad" flags:</h3>
+            <div class="images">
+                <div class="section1">
+                <img src="images/dominica.jpg" srcset="images/dominica%20copy.jpg 1x, images/dominica.jpg 2x" alt="Green flag of dominica with an emblem in the middle"">
+                <p class="caption">Dominica</p>
+                </div>
+                <div class="section2">
+                    <img src="images/beyoftunisia.jpg" srcset="images/beyoftunisia%20copy.jpg 1x, images/beyoftunisia.jpg 2x" alt="Red, white and green striped flag of the bey of tunisia"">
+                    <p class="caption">Bey of Tunisia</p>
+                </div>
+                <div class="section3">
+                    <img src="images/virginia.jpg" srcset="images/virginia%20copy.jpg 1x, images/virginia.jpg 2x" alt="blue flag of virginia with a shield in the middle"">
+                    <p class="caption">Virginia</p>
+                </div>
+            </div>
+            <h3>Of course, these rules can be broken and have many exceptions.</h3>
+            <div class="images">
+                <div class="section1" style="margin:1em">
+                <img src="images/southafrica.jpg" srcset="images/southafrica%20copy.jpg 1x, images/southafrica.jpg 2x" alt="the colorful flag of South Africa" style="margin:0.5em;">
+                <p class="caption">The many colors on South Africa's flag each have deep symbolic and historical meanings.</p>
+                </div>
+                <div class="section2" style="margin:1em">
+                    <img src="images/califlag.jpg" srcset="images/califlag%20copy.jpg 1x, images/califlag.jpg 2x" alt="Flag of California with a brown bear on it" style="margin:0.5em;">
+                    <p class="caption">The "CALIFORNIA REPUBLIC" text on California's flag makes this design memorable and iconic.</p>
+                </div>
+            </div>
+        </section>
+        
+        <nav class="nav" style="Grid-area:nav;">
+            <a href="main.html">Home</a>
+            <a href="types.html">Types of flags</a>
+            <a href="goodbad.html">Good flag, bad flag</a>
+            <a href="facts.html">Flag facts</a>
+            <button>Random Background</button>
+        </nav>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale-1">
+<link rel="stylesheet" href="styles.css">
+<title>Types of Flags</title>
+
+<style>
+    /*MOBILE & TABLET*/
+    @media only screen and (max-width:1200px){
+        .grid{
+            Display: grid;
+            Grid-template-columns: auto;
+            Grid-template-rows: 2% 4% auto;
+            padding:1em;
+            margin:1em;
+            gap: 1em;
+            Grid-template-areas: 
+                "nav"
+                "header"
+                "section";
+        }
+    }
+    /*DESKTOP*/
+    @media only screen and (min-width:1200px){
+        .grid{
+            Display: grid;
+            Grid-template-columns: auto 15%;
+            Grid-template-rows: 7% 5% auto;
+            padding:1.8em;
+            padding-top:1%;
+            margin:1.8em;
+            gap: 1.8em;
+            Grid-template-areas: 
+                "header ."
+                "section nav"
+        }
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="grid">
+        <h1 style="Grid-area:header; text-align:center;"">TYPES OF FLAGS</h1>
+        <section class="section" style="Grid-area:section;">
+                <h2>National / Geography Flags</h2>
+                <div class="images">
+                    <div class="section1">
+                    <img src="images/usflag.jpg" srcset="images/usflag%20copy.jpg 1x, images/usflag.jpg 2x" alt="Stars and stripes flag of the United States">
+                    <p class="caption">Flag of the United States</p>
+                    </div>
+                    <div class="section2">
+                        <img src="images/califlag.jpg" srcset="images/califlag%20copy.jpg 1x, images/califlag.jpg 2x" alt="Flag of California with a brown bear on it">
+                        <p class="caption">Flag of California</p>
+                    </div>
+                    <div class="section3">
+                        <img src="images/africaflag.jpg" srcset="images/africaflag%20copy.jpg 1x, images/africaflag.jpg 2x" alt="Red, Black and green Pan-African flag">
+                        <p class="caption">Pan-African flag</p>
+                    </div>
+                </div>
+                <h2>Pride Flags</h2>
+                <div class="images">
+                    <div class="section1">
+                    <img src="images/gayflag.jpg" srcset="images/gayflag%20copy.jpg 1x, images/gayflag.jpg 2x" alt="Rainbow gay pride flag">
+                    <p class="caption">Gay / LGBT+ flag</p>
+                    </div>
+                    <div class="section2">
+                        <img src="images/transflag.jpg" srcset="images/transflag%20copy.jpg 1x, images/transflag.jpg 2x" alt="Pink, blue and white transgender pride flag">
+                        <p class="caption">Transgender flag</p>
+                    </div>
+                </div>
+                <h2>Naval Flags</h2>
+                <div class="images">
+                    <div class="section1">
+                    <img src="images/aflag.jpg" srcset="images/aflag%20copy.jpg 1x, images/aflag.jpg 2x" alt="Blue and white A for Alpha Naval flag">
+                    <p class="caption">A / Alpha / Diver down, keep clear</p>
+                    </div>
+                    <div class="section2">
+                        <img src="images/2flag.jpg" srcset="images/2flag%20copy.jpg 1x, images/2flag.jpg 2x" alt="Blue and white 'two' Naval flag">
+                        <p class="caption">2 / Two</p>
+                    </div>
+                    <div class="section3">
+                        <img src="images/vflag.jpg" srcset="images/vflag%20copy.jpg 1x, images/vflag.jpg 2x" alt="Red and white V for Victor Naval flag">
+                        <p class="caption">V / Victor / Required assistance</p>
+                    </div>
+                </div>
+                <h2>Other</h2>
+                <div class="images">
+                    <div class="section1">
+                    <img src="images/lfc.jpg" srcset="images/lfc%20copy.jpg 1x, images/lfc.jpg 2x" alt="Red and white Liverpool football flag">
+                    <p class="caption">Sports team flags</p>
+                    </div>
+                    <div class="section2">
+                        <img src="images/queen.jpg" srcset="images/queen%20copy.jpg 1x, images/queen.jpg 2x" alt="Blue ER flag for Queen Elizabeth">
+                        <p class="caption">Personal / Royalty flags</p>
+                    </div>
+                    <div class="section3">
+                        <img src="images/demflag.jpg" srcset="images/demflag%20copy.jpg 1x, images/demflag.jpg 2x" alt="American Democrat flag with a donkey on it">
+                        <p class="caption">Political flags</p>
+                    </div>
+                </div>
+
+        </section>
+
+        <nav class="nav" style="Grid-area:nav;">
+            <a href="main.html">Home</a>
+            <a href="types.html">Types of flags</a>
+            <a href="goodbad.html">Good flag, bad flag</a>
+            <a href="facts.html">Flag facts</a>
+            <button>Random Background</button>
+        </nav>
+    
+    </div> 
+    
+
+
+</body>
+</html>

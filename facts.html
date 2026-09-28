@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale-1">
+<link rel="stylesheet" href="styles.css">
+<title>Flag Facts</title>
+
+<style>
+
+      /*MOBILE*/
+      @media only screen and (max-width:700px){
+        .grid{
+            Display: grid;
+            Grid-template-columns: auto;
+            Grid-template-rows: 3% 4% auto;
+            padding:1em;
+            margin:1em;
+            gap: 2em;
+            Grid-template-areas: 
+                "nav"
+                "header"
+                "fact1"
+                "fact2";
+        }
+    }
+    /*tablet*/ 
+    @media only screen and (min-width:700px){
+        .grid{
+            Display: grid;
+            Grid-template-columns: auto;
+            Grid-template-rows: 2% 4% auto;
+            padding:1em;
+            margin:1em;
+            gap: 2em;
+            Grid-template-areas: 
+                "nav nav"
+                "header header "
+                "fact1 fact2";
+        }
+    }
+    /*DESKTOP*/
+    @media only screen and (min-width:1200px){
+        .grid{
+        Display: grid;
+        Grid-template-columns: auto auto 15%;
+        Grid-template-rows: 6% auto auto auto;
+        padding:1.8em;
+        margin:1.8em;
+        gap: 1.8em;
+        Grid-template-areas: 
+            "header header ."
+            "fact1 fact2 nav"
+            "fact1 fact2 ."
+            "fact1 fact2 ."
+    }
+    }
+</style>
+
+</head>
+<body>
+
+    <div class="grid">
+        <h1 style="Grid-area:header; text-align:center;"">FUN FLAG FACTS</h1>
+        <section class="fact1" style="Grid-area:fact1;display:flex;flex-direction:column;width:100%;padding:2em">
+         <p>Currently, the world’s tallest flagpole is in Cairo, Egypt. It is 201.952 m (662 ft 7 in) tall and flies a 60 x 40 m (197 x 131 ft) Egyptian flag. 
+        </p>
+        <p>The world's LARGEST flag flown was in Baku, Azerbaijan in 2024. The flag measured 2,564.02 m² (27,598 ft²) and weighed 500 kg.</p>
+        <p>There are three country flags that are not rectangular in shape. Switzerland and the Vatican City have square flags, and Nepal’s flag is two triangular pennants.  
+        </p>
+        <p>The word flag comes from the Middle English word "flakken", meaning to fly or to flap.</p>
+        <p>The flags on the moon are likely bleached white due to radiation from the sun.</p>
+        <p>Betsy Ross did not design or sew the first flag of the United States. But, she did sew many flags for the US army.</p>
+        </section>
+
+        <section class="fact2" style="Grid-area:fact2;display:flex;flex-direction:column;width:100%;padding:2em">
+            <p>The oldest flag that is still in use today is Denmark's, which originated in 1219 AD.
+            </p>
+            <p>Four countries have flags featuring firearms: Mozambique, Guatemala, Bolivia, and Haiti.
+           </p>
+           <p>Nauru's flag doubles as a map; the yellow stripe in the middle being the equator, and the star representing Nauru.</p>
+           <p>Jamaica and Sri Lanka are the only countries whose flags don't contain red, white or blue.</p>
+           <p>The only flags containing the color purple are Dominica and Nicaragua.</p>
+           <p>Prayer flags in Himalayan mountain ranges, Nepalese cities, and Tibetan villages are arranged in a specific color order to represent five elements. Each flag features a prayer or mantra that is meant to be carried by the wind to bless the people around them.</p>
+           </section>
+
+        <nav class="nav" style="Grid-area:nav;">
+            <a href="main.html">Home</a>
+            <a href="types.html">Types of flags</a>
+            <a href="goodbad.html">Good flag, bad flag</a>
+            <a href="facts.html">Flag facts</a>
+            <button>Random Background</button>
+        </nav>
+    
+    </div>    
+
+
+</body>
+</html>
